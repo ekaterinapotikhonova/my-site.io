@@ -864,16 +864,16 @@ ul {
     border-radius: 35px;
 }
 
-@media (max-width: 1199px) {
+@media (min-width: 800px) {
     .banner {
         min-height: 450px;
         margin-top: 93px;
     }
-    .banner__background-desktop {
-        display: none;
-    }
     .banner__background-mobile {
         display: none;
+    }
+    .banner__background-desktop {
+        display: block;
     }
     .banner__background-tablet {
         display: none;
@@ -911,6 +911,52 @@ ul {
     }
 }
 
+@media (max-width: 799px) {
+    .banner {
+        min-height: 450px;
+        margin-top: 93px;
+    }
+    .banner__background-mobile {
+        display: none;
+    }
+    .banner__background-desktop {
+        display: block;
+    }
+    .banner__background-tablet {
+        display: none;
+    }
+    .banner__wrapper {
+        width: 88.28%;
+        min-width: 678px;
+        padding-top: 110px;
+    }
+    .banner__wrapper::before {
+        width: 120px;
+        height: 110px;
+        top: 202px;
+        left: -27px;
+        background-size: contain;
+    }
+    .banner__wrapper::after {
+        width: 78px;
+        height: 89px;
+        top: 166px;
+        right: 3px;
+        background-size: contain;
+    }
+    .banner__header {
+        width: 82%;
+        margin-bottom: 16px;
+        padding-left: 13px;
+    }
+    .banner__text {
+        font-size: 14px;
+        line-height: 20px;
+        width: 50%;
+        margin-bottom: 29px;
+        padding-left: 13px;
+    }
+}
 .contacts {
     position: relative;
     min-height: 611px;

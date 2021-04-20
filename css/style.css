@@ -920,10 +920,10 @@ ul {
         display: none;
     }
     .banner__background-desktop {
-        display: block;
+        display: none;
     }
     .banner__background-tablet {
-        display: none;
+        display: block;
     }
     .banner__wrapper {
         width: 88.28%;
